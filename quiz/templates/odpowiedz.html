@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Odpowiedzi</title>
+    </head>
+<body>
+    <form method="GET">
+        <p>
+            {% for message in get_flashed_messages() %}
+              {{ message }}
+            {% endfor %}
+        </p>
+    <button type="submit">Wróć do quizu</button>
+</form>
+</body>
+</html>
